@@ -1,0 +1,77 @@
+html, body  {
+    height: 100%;
+}
+
+body  {
+ background-color: rgb(189, 188, 188);
+ width: 100%;
+ font-family: 'sans-serif';
+ margin: 0;
+}
+
+.wrapper    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.container-calc {
+    flex-direction: row;
+    display: flex;
+    // border: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 10px;
+}
+
+.container-calc span  {
+    // width: 50px;
+    font-size: 24px;
+}
+
+.container__calc-body   {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    width: 250px;
+}
+
+button {
+    font-size: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    cursor: pointer;
+    width: 50px;
+    outline: none;
+    transition: all .2s;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    &:active {
+        transform: scale(0.9, 0.9);
+    }
+}
+
+.calc-body__digits  {
+    display: flex;
+    align-items: flex-start;
+    // width: 70%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.calc-body__actions {
+    display: flex;
+    // width: 30%;
+    align-items: flex-start;
+}
+
+.container-checklist {
+    flex-direction: column;
+    display: flex;
+    margin-top: 50px;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container-calc">
+            <span id="first-input" class="calc_number"></span>
+            <span id="action"class="calc_number"></span>
+            <span id="second-input"class="calc_number"></span>
+            <span id="equal"class="calc_number"></span>
+            <span id="result" class="calc_number"></span>
+        </div>
+        <div class="container__calc-body">
+            <div class="calc-body__digits">
+                <button data-number="1">1</button>
+                <button data-number="2">2</button>
+                <button data-number="3">3</button>
+                <button data-number="4">4</button>
+                <button data-number="5">5</button>
+                <button data-number="6">6</button>
+                <button data-number="7">7</button>
+                <button data-number="8">8</button>
+                <button data-number="9">9</button>
+                <button data-number="0">0</button>
+                <button data-number=".">.</button>
+            </div>
+            <div class="calc-body__actions">
+                <div class="actions__first">
+                    <button data-action="+">+</button>
+                    <button data-action="-">-</button>
+                    <button data-action="*">*</button>
+                </div>
+                <div class="actions__second">
+                    <button data-action="/">/</button>
+                    <button data-result="=">=</button>
+                    <button id="reset">CE</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-checklist">
+            <div class="checkbox__wrap">
+                <input type="checkbox" class="checkbox">Item
+                <span class="item__price">200</span>
+            </div>
+            <div class="checkbox__wrap">
+                    <input type="checkbox" class="checkbox">Item
+                    <span class="item__price">400</span>
+            </div>
+            <div class="checkbox__wrap">
+                    <input type="checkbox" class="checkbox">Item
+                    <span class="item__price">100</span>
+            </div>
+            <div class="checkbox__wrap">
+                    <input type="checkbox" class="checkbox">Item
+                    <span class="item__price">500</span>
+            </div>
+            <div class="checkbox__wrap">
+                    <input type="checkbox" class="checkbox">Item
+                    <span class="item__price">2600</span>
+            </div>
+            <span class="items__total">Total: <span class="total"></span></span>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="checkbox.js"></script>
+</body>
+
+</html>
